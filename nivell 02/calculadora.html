@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+    <script>
+
+
+        function calculadora(operator, n1, n2){
+            if(operator == "+" || operator == "suma"){
+                console.log(n1 + n2);
+            }else if(operator == "-" || operator == "resta"){
+                console.log(n1 - n2);
+            }else if(operator == "*" || operator == "multiplicacion"){
+                console.log(n1 * n2);
+            }else if(operator == "/" || operator == "division"){
+                if(n2 == 0){
+                    console.log("Denominador 0, bucle infinito");
+                }else{
+                    console.log(n1 / n2);
+                }        
+            }else{
+                console.log("Operacion no valida");
+            }
+        }
+
+        calculadora("suma", 5, 3);
+        calculadora("+", 5, 3);
+        calculadora("resta", 5, 3);
+        calculadora("-", 5, 3);
+        calculadora("multiplicacion", 5, 3);
+        calculadora("*", 5, 3);
+        calculadora("division", 5, 3);
+        calculadora("/", 5, 3);
+        calculadora("/", 40, 0);
+        calculadora("undefined", 5, 3);
+
+        function suma(sum1, sum2){
+            console.log(sum1 + sum2);
+        }
+        suma(3,4);
+
+        function resta(rest1, rest2){
+            console.log(rest1 - rest2);
+        }
+        resta(3, 4);
+
+        function multiplicacion(mult1, mult2){
+            console.log(mult1 * mult2);
+        }
+        multiplicacion(3, 4)
+
+        function divisio(div1, div2){
+            console.log(div1 / div2);
+        }
+        divisio(3, 4);
+
+
+
+
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
